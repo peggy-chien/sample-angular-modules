@@ -6,7 +6,7 @@ import { metaReducers, reducers } from "./+state/app.reducer";
 import { EffectsModule } from "@ngrx/effects";
 import { AppEffects } from "./+state/app.effects";
 import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
-import { InMemoryDataService } from "./service/in-memory-data.service";
+import { InMemoryDataService } from "./services/in-memory-data.service";
 import { environment } from "src/environments/environment";
 import { StoreDevtoolsModule } from "@ngrx/store-devtools";
 
