@@ -1,0 +1,25 @@
+:host {
+  .grid-frame {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-auto-flow: row;
+  }
+  
+  .frame-title {
+    grid-column: 1 / -1;
+    padding: 1rem .75rem;
+  }
+  
+  .left-side-bar {
+    padding: .5rem .75rem;
+    display: flex;
+    flex-direction: column;
+    .router-link-active {
+      text-decoration: none;
+      color: inherit;
+      &:hover {
+        cursor: default;
+      }
+    }
+  }
+}

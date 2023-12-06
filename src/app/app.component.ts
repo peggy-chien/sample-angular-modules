@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { MainFrameComponent } from './components/main-frame/main-frame.component';
 
 @Component({
   selector: 'app-root',
@@ -10,10 +11,9 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [
     CommonModule,
-    RouterOutlet,
     HttpClientModule,
+    MainFrameComponent
   ],
 })
 export class AppComponent {
-  title = 'location-dropdown';
 }
